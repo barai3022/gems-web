@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@import '@xyflow/react/dist/style.css';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Data class  */
+.data_main_class {
+  @apply w-full col-span-2;
+}
+
+.data_main_class1 {
+  @apply w-full;
+}
+
+.data_title_class {
+  @apply text-center bg-gray-200 border rounded-t text-indigo-800 border-cyan-600 font-semibold uppercase py-1 text-lg;
+}
+
+.data_value_class {
+  @apply text-center text-cyan-300 border rounded-b border-cyan-600 font-semibold;
+}
+
+
+/* Air Index class  */
+.air_title_class {
+  @apply flex flex-row items-center justify-between text-xs text-center bg-gray-200 border rounded-t border-cyan-600 px-2
+}
+
+.air_unit_class {
+  @apply text-center bg-black text-white border rounded border-cyan-600 px-1 m-1
+}
+
+.air_value_class {
+  @apply flex flex-row items-center justify-between text-center font-semibold text-cyan-300 border rounded-b border-cyan-600 text-xs px-2
+}
+
+.air_limit_class {
+  @apply flex flex-row items-center bg-white justify-between text-center text-cyan-900 border rounded border-cyan-600 text-xs px-1 m-1
+}
+
+
+
+.react-flow__edge-path {
+  stroke: currentColor;
+}

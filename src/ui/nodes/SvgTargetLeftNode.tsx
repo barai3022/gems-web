@@ -1,0 +1,41 @@
+import { SvgNodeData } from '@/types'
+import { Handle, Position } from '@xyflow/react'
+import React from 'react'
+
+const SvgTargetLeftNode = ({
+  data,
+}: {
+  data: SvgNodeData
+}) => {
+  const {
+    SvgComponent,
+    label,
+    widthClass = 'w-24',
+    heightClass = 'h-28',
+  } = data
+
+  return (
+    <div
+      className={`border  border-gray-50 rounded p-2 flex flex-col items-center 
+                  ${widthClass} ${heightClass} select-none`}
+    >
+      {/* Target Handle */}
+      <Handle
+        type="target"
+        position={Position.Left}
+        id="s1"
+        className="absolute top-1/2 -translate-y-1/2"
+      />
+
+      {/* SVG */}
+      <SvgComponent className=" " style={{ height: '100%', width: '100%' }} />
+
+      {/* Label */}
+      <div className="text-center uppercase font-semibold text-md mt-3">
+        {label}
+      </div>
+    </div>
+  )
+}
+
+export default SvgTargetLeftNode
