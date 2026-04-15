@@ -1,0 +1,60 @@
+export const dailyDgLoad = [
+    { time: "00", kwh: 0 },
+    { time: "01", kwh: 0 },
+    { time: "02", kwh: 0 },
+    { time: "03", kwh: 0 },
+    { time: "04", kwh: 0 },
+    { time: "05", kwh: 0 },
+    { time: "06", kwh: 0 },
+    { time: "07", kwh: 0 },
+    { time: "08", kwh: 25 },  // DG runs 1st time
+    { time: "09", kwh: 40 },  // DG runs 2nd time
+    { time: "10", kwh: 0 },
+    { time: "11", kwh: 0 },
+    { time: "12", kwh: 0 },
+    { time: "13", kwh: 0 },
+    { time: "14", kwh: 50 },  // DG runs 1st time
+    { time: "15", kwh: 30 },  // DG runs 2nd time
+    { time: "16", kwh: 0 },
+    { time: "17", kwh: 0 },
+    { time: "18", kwh: 15 },  // DG runs 1st time
+    { time: "19", kwh: 0 },
+    { time: "20", kwh: 0 },
+    { time: "21", kwh: 0 },
+    { time: "22", kwh: 0 },
+    { time: "23", kwh: 0 },
+];
+
+
+export const monthlyDgLoad = [
+  { day: "1", gen: 23.53, avg: 60.18 },
+  { day: "2", gen: 41.18, avg: 60.18 },
+  { day: "3", gen: 17.65, avg: 60.18 },
+  { day: "4", gen: 52.94, avg: 60.18 },
+  { day: "5", gen: 70.59, avg: 60.18 },
+  { day: "6", gen: 67.65, avg: 60.18 },
+  { day: "7", gen: 44.12, avg: 60.18 },
+  { day: "8", gen: 76.47, avg: 60.18 },
+  { day: "9", gen: 11.76, avg: 60.18 },
+  { day: "10", gen: 5.88, avg: 60.18 },
+  { day: "11", gen: 23.53, avg: 60.18 },
+  { day: "12", gen: 41.18, avg: 60.18 },
+  { day: "13", gen: 58.82, avg: 60.18 },
+  { day: "14", gen: 70.59, avg: 60.18 },
+  { day: "15", gen: 82.35, avg: 60.18 },
+  { day: "16", gen: 76.47, avg: 60.18 },
+  { day: "17", gen: 64.71, avg: 60.18 },
+  { day: "18", gen: 47.06, avg: 60.18 },
+  { day: "19", gen: 52.94, avg: 60.18 },
+  { day: "20", gen: 58.82, avg: 60.18 },
+  { day: "21", gen: 70.59, avg: 60.18 },
+  { day: "22", gen: 82.35, avg: 60.18 },
+  { day: "23", gen: 88.24, avg: 60.18 },
+  { day: "24", gen: 76.47, avg: 60.18 },
+  { day: "25", gen: 94.12, avg: 60.18 },
+  { day: "26", gen: 85.29, avg: 60.18 },
+  { day: "27", gen: 73.53, avg: 60.18 },
+  { day: "28", gen: 67.65, avg: 60.18 },
+  { day: "29", gen: 58.82, avg: 60.18 },
+  { day: "30", gen: 52.94, avg: 60.18 },
+];
