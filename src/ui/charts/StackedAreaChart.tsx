@@ -30,12 +30,12 @@ const StackedAreaChart = ({
                     <XAxis dataKey="time" tick={{ fontSize: 12 }} />
                     <YAxis tick={{ fontSize: 12 }} unit=" kW" />
 
-                    <Tooltip
-                        formatter={(value?: number | string) =>
-                            value !== undefined ? `${value} kW` : ""
-                        }
-                        labelStyle={{ fontWeight: "normal" }}
-                    />
+<Tooltip
+  formatter={(value: any) =>
+    value !== undefined ? `${value} kW` : ""
+  }
+  labelStyle={{ fontWeight: "normal" }}
+/>
 
                     {/* Legend */}
                     <Legend
