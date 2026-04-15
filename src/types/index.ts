@@ -31,3 +31,10 @@ export interface LinkType {
      href: string;
      isMain: boolean;
 }
+
+export interface AirDataObject {
+  title: string;
+  unit: string;
+  val: string | number;
+  limit: string;
+};
